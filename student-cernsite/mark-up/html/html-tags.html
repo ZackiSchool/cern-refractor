@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags</title>
+</head>
+<body>
+<header>
+    <nav aria-label="breadcrumb">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../technical.html">Technical</a></li>
+            <li><a href="../markup.html">HTML Format</a></li>
+            <li>Tags</li>
+        </ul>
+    </nav>
+    <h1>HTML Tags</h1>
+</header>
+
+<main>
+    <p>This is a list of tags used in the HTML language. Each tag starts with a tag opener (<code>&lt;</code>) and ends with a tag closer (<code>&gt;</code>). Many tags have corresponding closing tags which are identical except for a slash after the tag opener (e.g., <code>&lt;TITLE&gt;</code>).</p>
+    <p>Some tags take parameters, called attributes. Attributes appear after the tag, separated by spaces, and affect rendering or behavior. For example, see <a href="../markup.html">HTML</a> and <a href="../../technical/addressing/syntax-addressing/naming-schemes.html">elsewhere</a>.</p>
+
+    <h2 id="title">Title</h2>
+    <p>The title of a document is given between <code>&lt;TITLE&gt;</code> tags. The text inside is the title for the hypertext node. There should only be one title per node. It may not contain anchors or paragraph marks. It may appear in history lists or window labels.</p>
+
+    <h2 id="next-id">Next ID</h2>
+    <p>Obsolete: Only used by NeXT Browser. This tag may be ignored. Example use: <code>&lt;NEXT ID=123&gt;</code></p>
+
+    <h2 id="base-address">Base Address</h2>
+    <p>Anchors specify addresses of other documents. If a document is visible at multiple addresses, a base address may be used to resolve relative links. NOT CURRENTLY USED.</p>
+
+    <h2 id="anchor">Anchors</h2>
+    <p>Anchors define links in two forms: starting or destination of a link. Attributes include:</p>
+    <ul>
+        <li><strong>HREF:</strong> Start of a link to another document. Example: <code>&lt;a href="../markup.html"&gt;HTML&lt;/a&gt;</code></li>
+        <li><strong>NAME:</strong> Destination of a link. Example: <code>&lt;a name="anchor1"&gt;Destination&lt;/a&gt;</code></li>
+        <li><strong>TYPE:</strong> Relationship type. Optional. Default is void.</li>
+    </ul>
+
+    <h2 id="isindex">IsIndex</h2>
+    <p>Marks a document as an index for keyword searches. Format: append <code>?keywords</code> to the node address.</p>
+
+    <h2 id="plaintext">Plaintext</h2>
+    <p>All following text is literal. No closing tag. Example:</p>
+    <pre><code>This text is interpreted literally.
+Line breaks and spacing are preserved.
+&lt; and &gt; are treated as text, not tags.</code></pre>
+
+    <h2 id="headings">Headings</h2>
+    <p>HTML supports several levels of headings: <code>&lt;H1&gt;</code> to <code>&lt;H6&gt;</code>. H1 is recommended at the start of a node. Closing tags are required.</p>
+
+    <h2 id="paragraphs">Paragraphs</h2>
+    <p>Indicated with <code>&lt;P&gt;</code>. Marks the start of a new paragraph. Closing tags optional in early HTML.</p>
+
+    <h2 id="lists">Lists</h2>
+    <p>Three main types:</p>
+    <ul>
+        <li><strong>UL:</strong> Unordered list</li>
+        <li><strong>MENU:</strong> Compact list, one item per line</li>
+        <li><strong>DIR:</strong> Short items, often arranged in columns</li>
+    </ul>
+
+    <h2 id="glossaries">Glossaries</h2>
+    <p>Definition lists using <code>&lt;DL&gt;</code>, with terms (<code>&lt;DT&gt;</code>) and definitions (<code>&lt;DD&gt;</code>). Example:</p>
+    <dl>
+        <dt>Term</dt>
+        <dd>A word or phrase being defined. See <a href="../../technical/addressing/syntax-addressing/relative.html">relative name</a>.</dd>
+        <dt>Definition</dt>
+        <dd>The explanation of the term. See <a href="../../technical/addressing/syntax-addressing/search.html">network address format</a>.</dd>
+    </dl>
+
+    <h2 id="example-sections">Example Sections</h2>
+    <p>Fixed-width text using <code>&lt;PRE&gt;</code> or <code>&lt;XMP&gt;</code>. Example:</p>
+    <pre><code>12345678
+! ! ! !
+Column: First Second Third
+Junk: The Quick brown fox jumps over the lazy dog</code></pre>
+
+    <p>Placeholder links for terms not specified should use: <a href="#">AAP</a>.</p>
+</main>
+
+<footer>
+    <p><a href="../../index.html">Back to Home</a></p>
+</footer>
+</body>
+</html>
